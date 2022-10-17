@@ -3,6 +3,9 @@ name: Docker
 on:
   schedule:
     - cron: '28 2 * * *'
+  push:
+    branches:
+      - master
   workflow_dispatch:
 
 env:
