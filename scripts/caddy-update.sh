@@ -18,7 +18,7 @@ getLatestVersion() {
 
 LATEST_CADDY_VERSION=$(getLatestVersion "library/caddy")
 LATEST_CUSTOM_VERSION=$(
-    cat ../Dockerfile | \
+    cat Dockerfile | \
     head -n 1 | \
     grep -E -oh '[0-9](\.[0-9](\.[0-9])?)?$'
 )
@@ -33,7 +33,7 @@ fi
 
 echo "This image is not up-to-date. Updating to $LATEST_CADDY_VERSION"
 
-cp ../Dockerfile ../Dockerfile.tmp
-echo "ARG CADDY_VERSION=$LATEST_CADDY_VERSION" > ../Dockerfile
-cat ../Dockerfile.tmp | tail -n+2 >> ../Dockerfile
-rm ../Dockerfile.tmp
+cp Dockerfile Dockerfile.tmp
+echo "ARG CADDY_VERSION=$LATEST_CADDY_VERSION" > Dockerfile
+cat Dockerfile.tmp | tail -n+2 >> Dockerfile
+rm Dockerfile.tmp

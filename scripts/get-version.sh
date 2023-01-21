@@ -1,7 +1,7 @@
 #!/bin/bash
 
 LATEST_VERSION=$(
-    cat ../Dockerfile | \
+    cat Dockerfile | \
     head -n 1 | \
     grep -E -oh '[0-9](\.[0-9](\.[0-9])?)?$'
 )
