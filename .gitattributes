@@ -1,0 +1,24 @@
+# Auto detect text files and perform LF normalization
+*          text=auto
+
+# Docker
+Dockerfile text
+
+# Documents
+*.md       text diff=markdown
+LICENSE    text
+
+# Serialisation
+*.yaml     text
+*.yml      text
+
+# Scripts
+*.bash     text eol=lf
+
+# Text files where line endings should be preserved
+*.patch    -text
+
+# Exclude files from exporting
+.gitattributes export-ignore
+.gitignore     export-ignore
+.gitkeep       export-ignore
