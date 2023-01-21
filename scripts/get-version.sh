@@ -7,7 +7,7 @@ LATEST_VERSION=$(
 )
 
 if [[ ! -z $GITHUB_OUTPUT ]]; then
-    echo "LATEST_VERSION=$LATEST_CADDY_VERSION" >> $GITHUB_OUTPUT
+    echo "LATEST_VERSION=$LATEST_VERSION" >> $GITHUB_OUTPUT
 else
-    echo $LATEST_VERSION
-fi
+
+echo "Latest version: $LATEST_VERSION"
