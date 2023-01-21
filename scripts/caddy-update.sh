@@ -31,6 +31,10 @@ if [[ $LATEST_CADDY_VERSION == $LATEST_CUSTOM_VERSION ]]; then
     exit 0
 fi
 
+if [[ ! -z $GITHUB_OUTPUT ]]; then
+    echo "LATEST_CADDY_VERSION=$LATEST_CADDY_VERSION" >> $GITHUB_OUTPUT
+fi
+
 echo "This image is not up-to-date. Updating to $LATEST_CADDY_VERSION"
 
 cp Dockerfile Dockerfile.tmp
