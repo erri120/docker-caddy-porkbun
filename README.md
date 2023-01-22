@@ -1,4 +1,4 @@
-[![Docker Image Version (latest semver)](https://img.shields.io/docker/v/erri120/docker-caddy-porkbun?label=Docker%20Hub)](https://hub.docker.com/r/erri120/docker-caddy-porkbun)
+[![Docker Image Version (latest semver)](https://img.shields.io/docker/v/erri120/docker-caddy-porkbun?label=Docker%20Hub)](https://hub.docker.com/r/erri120/docker-caddy-porkbun) [![Docker](https://github.com/erri120/docker-caddy-porkbun/actions/workflows/docker-publish.yml/badge.svg)](https://github.com/erri120/docker-caddy-porkbun/actions/workflows/docker-publish.yml) [![Check for Updates](https://github.com/erri120/docker-caddy-porkbun/actions/workflows/check-update.yml/badge.svg)](https://github.com/erri120/docker-caddy-porkbun/actions/workflows/check-update.yml)
 
 # docker-caddy-porkbun
 
