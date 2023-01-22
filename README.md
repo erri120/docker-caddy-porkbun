@@ -6,6 +6,7 @@ This is a custom [Caddy](https://hub.docker.com/_/caddy)-based image that adds t
 
 - adds the [porkbun](https://github.com/caddy-dns/porkbun) module to the base image
 - installs the [`tzdata`](https://wiki.alpinelinux.org/wiki/Setting_the_timezone) package, so you can use the `TZ` environment variable
+- installs `curl`, so you can add a custom [healthcheck](https://docs.docker.com/compose/compose-file/#healthcheck)
 
 ## Usage
 
