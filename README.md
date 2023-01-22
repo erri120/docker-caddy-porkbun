@@ -26,4 +26,4 @@ Don't forget to [update your config](https://github.com/caddy-dns/porkbun#config
 
 ## License
 
-MIT, see [LICENSE](./LICENSE) for more information.
+See [LICENSE](./LICENSE) for more information.
