@@ -9,4 +9,7 @@ RUN xcaddy build \
 # Container
 FROM caddy:${CADDY_VERSION}-alpine
 
+# install additional packages
+RUN apk add --no-cache tzdata
+
 COPY --from=builder /usr/bin/caddy /usr/bin/caddy
