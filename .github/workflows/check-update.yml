@@ -23,6 +23,6 @@ jobs:
       - name: Commit
         uses: EndBug/add-and-commit@v9
         with:
-          add: 'Dockerfile'
+          add: "Dockerfile"
           default_author: user_info
           message: "Update Caddy to ${{ steps.caddy-update.outputs.LATEST_CADDY_VERSION }}"
